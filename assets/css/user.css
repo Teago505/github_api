@@ -1,0 +1,90 @@
+/* User */
+
+.block-user {
+    padding: 5px 7.5px;
+}
+
+.block-user-header {
+    display: flex;
+    justify-content: space-around;
+    
+    margin: 7.5px 0;
+}
+
+.block-user-header .icon {
+    width: 20%;
+
+    border-radius: 50%;
+    border: var(--border);
+}
+
+.block-user-header div {
+    width: 60%;
+}
+
+.block-user-header div a {
+    font-size: 2.25rem;
+    color: var(--font-color);
+
+    margin: 10px 0;
+
+    text-decoration: none;
+}
+
+.block-user-header div a:hover {
+    text-decoration: underline;
+}
+
+.block-user-header div h2 {
+    font-size: 1.35rem;
+
+    color: var(--font-color-transparent);
+
+    border-top: var(--border);
+
+    padding: 10px 5px;
+}
+
+.svg-location {
+    width: 20px;
+}
+
+.block-user-main {
+    border-top: var(--border);
+
+    padding: 20px 5px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.block-user-main a {
+    border: var(--border);
+    border-radius: 5px;
+
+    background-color: var(--color-1-transparent);
+
+    font-size: 1.25rem;
+    font-family: 'Nunito Sans', sans-serif;
+    color: var(--font-color);
+
+    width: 25%;
+    height: 35px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+    transition: .25s;
+
+    text-decoration: none;
+}
+
+.block-user-main a:hover {
+    background-color: var(--color-1-transparent-2);
+
+    transform: scale(1.1);
+}

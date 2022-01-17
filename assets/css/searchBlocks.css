@@ -1,0 +1,77 @@
+/* Search blocks  */
+
+.search-block {
+    width: 90%;
+    height: 70px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+    margin: 10px auto;
+
+    border: var(--border);
+    border-radius: 10px;
+    
+    background-color: var(--color-1-transparent);
+
+    cursor: pointer;
+    transition: .25s;
+}
+
+.search-block:hover {
+    background-color: var(--color-1-transparent-2);
+    transform: scale(1.01);
+}
+
+.search-block img {
+    width: 6%;
+
+    border: var(--border);
+    border-radius: 50%;
+}
+
+.search-block h2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    width: 70%;
+
+    font-family: 'Nunito Sans', sans-serif;
+    color: var(--font-color);
+    font-size: 1.5rem;
+}
+
+.search-block span {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1.15rem;
+    color: var(--font-color-transparent);
+    
+    width: 10%;
+}
+
+.divButtonsPage {
+    text-align: center;
+
+    margin: 15px;
+}
+
+.divButtonsPage .next-button {
+    background-color: transparent;
+
+    border: var(--border);
+    border-radius: 5px;
+
+    color: var(--font-color-transparent);
+    font-size: 1.2rem;
+    
+    cursor: pointer;
+    transition: .25s;
+    
+    margin: 0 5px;
+}
+
+.divButtonsPage .next-button:hover {
+    background-color: var(--color-3-transparent);
+}

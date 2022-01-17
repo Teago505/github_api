@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title id="title-page">GitHub API</title>
+
+  <!-- CSS -->
+
+  <link rel="stylesheet" href="./assets/css/reset.css" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="stylesheet" href="./assets/css/user.css" />
+  <link rel="stylesheet" href="./assets/css/searchBlocks.css" />
+  <link rel="stylesheet" href="./assets/css/resoponsive.css">
+
+  <!-- JS -->
+
+  <script src="./assets/js/getJSON.js"></script>
+  <script>
+    const url = "https://api.github.com/";
+
+    addEventListener('keydown', (e) => {
+      if (e.key == 'Enter' && document.getElementById('input') == document.activeElement) {
+        searchUsers(document.getElementById('input').value, 1)
+      }
+    })
+  </script>
+  <script src="./assets/js/buildElements.js"></script>
+  <script src="./assets/js/getUsers.js"></script>
+  <script src="./assets/js/searchUser.js"></script>
+
+</head>
+
+<body>
+  <header>
+    <h1 class="title">GitHub API</h1>
+
+    <div class="form">
+      <input id="input" type="text" class="input-text" placeholder="Insira o nome do usuário" />
+      <button class="btn" onclick="searchUsers(document.getElementById('input').value, 1)">
+        Buscar usuário
+      </button>
+    </div>
+  </header>
+  <main id="user-area"></main>
+</body>
+
+</html>
